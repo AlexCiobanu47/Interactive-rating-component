@@ -13,6 +13,7 @@
 }
 
 body {
+  background-color: var(--dark-blue);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -64,7 +65,7 @@ main .rating-buttons button {
   cursor: pointer;
 }
 main .rating-buttons button:hover {
-  background-color: var(--orange);
+  background-color: var(--light-grey);
 }
 main .rating-buttons .active-button {
   background-color: var(--orange);
@@ -76,6 +77,10 @@ main .submit-button {
   width: 100%;
   border-radius: 4rem;
   padding: 1rem;
+}
+main .submit-button:hover {
+  background-color: var(--white);
+  color: var(--orange);
 }
 /*thank you page*/
 .thankyou-page {
@@ -97,9 +102,10 @@ footer {
   height: 2.5rem;
   font-size: 11px;
   text-align: center;
+  color: var(--white);
 }
 footer a {
-  color: hsl(228, 45%, 44%);
+  color: var(--white);
 }
 .hidden {
   display: none;
