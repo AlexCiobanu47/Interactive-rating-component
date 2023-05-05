@@ -1,4 +1,87 @@
+:root {
+  --white: rgb(255, 255, 255);
+  --light-grey: rgb(149, 158, 172);
+  --medium-grey: rgb(124, 135, 152);
+  --dark-grey: rgb(30, 37, 80);
+  --dark-blue: rgb(37, 45, 55);
+  --very-dark-blue: rgb(18, 20, 23);
+  --orange: rgb(251, 116, 19);
+}
+* {
+  border: 0;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-family: "Overpass", sans-serif;
+}
+/*main card*/
+main {
+  background: linear-gradient(
+    to top right,
+    var(--very-dark-blue),
+    var(--dark-grey)
+  );
+  border-radius: 1rem;
+  padding: 2rem;
+  max-width: 18rem;
+}
+.star-icon {
+  border-radius: 50%;
+  padding: 1rem;
+  background-color: var(--dark-blue);
+}
+main h1 {
+  color: var(--white);
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+main p {
+  margin-top: 1rem;
+  color: var(--light-grey);
+  font-size: 0.9rem;
+}
+main .rating-buttons {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+main .rating-buttons button {
+  text-decoration: none;
+  background-color: var(--dark-blue);
+  color: var(--white);
+  padding: 0.75rem;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+}
+main .rating-buttons button:visited {
+  background-color: var(--light-grey);
+}
+main .rating-buttons button:hover {
+  background-color: var(--orange);
+}
+
+main .submit-button {
+  border: none;
+  background-color: var(--orange);
+  color: var(--white);
+  width: 100%;
+  border-radius: 4rem;
+  padding: 1rem;
+}
+/*footer*/
 footer {
+  position: absolute;
+  bottom: 0;
+  height: 2.5rem;
   font-size: 11px;
   text-align: center;
 }
