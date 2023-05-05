@@ -32,6 +32,7 @@ main {
   padding: 2rem;
   max-width: 18rem;
 }
+/*form-page*/
 .star-icon {
   border-radius: 50%;
   padding: 1rem;
@@ -62,13 +63,12 @@ main .rating-buttons button {
   text-align: center;
   cursor: pointer;
 }
-main .rating-buttons button:visited {
-  background-color: var(--light-grey);
-}
 main .rating-buttons button:hover {
   background-color: var(--orange);
 }
-
+main .rating-buttons .active-button {
+  background-color: var(--orange);
+}
 main .submit-button {
   border: none;
   background-color: var(--orange);
@@ -76,6 +76,19 @@ main .submit-button {
   width: 100%;
   border-radius: 4rem;
   padding: 1rem;
+}
+/*thank you page*/
+.thankyou-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.user-rating {
+  color: var(--orange);
+}
+.thankyou-text {
+  text-align: center;
 }
 /*footer*/
 footer {
@@ -87,4 +100,7 @@ footer {
 }
 footer a {
   color: hsl(228, 45%, 44%);
+}
+.hidden {
+  display: none;
 }

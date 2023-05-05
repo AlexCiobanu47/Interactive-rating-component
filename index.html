@@ -18,24 +18,36 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
     <title>Frontend Mentor | Interactive rating component</title>
   </head>
   <body>
     <main>
-      <img src="images/icon-star.svg" alt="" class="star-icon" />
-      <h1>How did we do?</h1>
-      <p>
-        Please let us know how we did with your support request. All feedback is
-        appreciated to help us improve our offering!
-      </p>
-      <div class="rating-buttons">
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>4</button>
-        <button>5</button>
+      <div class="form-page" id="formPage">
+        <img src="images/icon-star.svg" alt="" class="star-icon" />
+        <h1>How did we do?</h1>
+        <p>
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <div class="rating-buttons">
+          <button id="button1">1</button>
+          <button id="button2">2</button>
+          <button id="button3">3</button>
+          <button id="button4">4</button>
+          <button id="button5">5</button>
+        </div>
+        <button class="submit-button" id="submitButton">SUBMIT</button>
       </div>
-      <button class="submit-button">SUBMIT</button>
+      <div class="hidden thankyou-page" id="thankyouPage">
+        <img src="images/illustration-thank-you.svg" alt="Thank you image" />
+        <p class="user-rating" id="userRating"></p>
+        <h1>Thank you!</h1>
+        <p class="thankyou-text">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don't hesitate to get in touch
+        </p>
+      </div>
     </main>
     <footer>
       Challenge by
